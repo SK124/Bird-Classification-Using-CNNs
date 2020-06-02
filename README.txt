@@ -1,5 +1,5 @@
 ####README####
-
+UPDATE: Please go to the colab notebook from this link https://colab.research.google.com/drive/1s49zHKAiSX9pd3pEq4R0iyzhCFaJcSCe?usp=sharing
 Packages:
 If you are using Google Colaboratory then you do not need to install any packages because all the packages are pre installed you are only required to 
 import them which will be step 2, but if you are using local machine then these are the packages you have to install.
