@@ -200,7 +200,7 @@ If you want to check the perfomance of the smodel follow this procedure:
 
 Load the deleiverables.zip in to your Drive 
 
-Link : https://drive.google.com/file/d/1i3mV36aeF4cPCwzcCnY2qPvglRg_i8Lq/view?ts=5e707e7b
+     Link : https://drive.google.com/file/d/1i3mV36aeF4cPCwzcCnY2qPvglRg_i8Lq/view?ts=5e707e7b
 
 deleiverables.zip(84.4MB) folder has the following:
 
@@ -208,9 +208,9 @@ deleiverables.zip(84.4MB) folder has the following:
  
  Best Model Weights (best_weights.h5)
  
- X_test,y_test(X_test.npy,y_test.npy)
+ X_test,y_test ( X_test.npy , y_test.npy )
 
-Execute the Import Block, Custom CNN Block which contains the 'create model function' and unzip deleiverables.zip
+Execute the **Import Block**, **Custom CNN Block** which contains the **'create model function'** and unzip **deleiverables.zip**
 
 The code is as follows 
 
