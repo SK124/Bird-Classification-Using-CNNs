@@ -85,7 +85,7 @@ Loss Function: Multi-Label CrossEntropy
 
 Optimizer Used : Adam
 
-Learning Rate : Learning rate=0.001, β1=0.9, β2=0.
+Learning Rate : Learning rate=0.001, β1=0.9, β2=0.=0.999
 
 Dropout : 0.5 , that is half of total neurons but only during train time.
 
@@ -123,6 +123,10 @@ further,image size was changed to as described in paper to fit the model.
 much deeper network different types of augmentations were done like warping, random lightning
 Unfortunately I do not have the performance picture
 
+**Snapshot From Notebook**
+
+![image](https://user-images.githubusercontent.com/47039231/96603280-8021c280-1311-11eb-9fe8-ba541adfc846.png)
+
 
 **Future Work**
   1. I think this performance could be increased by using 256X256 pixel inputs with a deeper model
@@ -147,6 +151,7 @@ trained as the test set of CUB may overlap with the training set of the original
 
 
 **Instrcutions to run it on your Local Machine**
+
 If you are using Google Colaboratory then you do not need to install any packages because all the packages are pre installed you are only required to 
 import them which will be step 2, but if you are using local machine then these are the packages you have to install.
 
@@ -184,13 +189,13 @@ Datatset:
 Caltech serves are a bit slow it will roughly take more than a hour on a good internet connection, I have already downloaded the dataset 
 and stored it in my drive under the name 'UCSD 200'.You can use it as well. Add it to your drive
 
-  Link : https://drive.google.com/drive/folders/1Sq0HVOXwE5fr-jR0iSoT-wjJsnIX0mxR?usp=sharing
+      Link : https://drive.google.com/drive/folders/1Sq0HVOXwE5fr-jR0iSoT-wjJsnIX0mxR?usp=sharing
  
 Add it your drive account and follow the following instructions.
 
 
 
-Instructions
+**Instructions**
 
 After Placing  the Dataset in your Google drive,open colabarotry, mount your drive and  execute the 'Import Block' followed by 'Extracting All Files' 
 Codeblock from my ipynb file.
@@ -204,11 +209,11 @@ Load the deleiverables.zip in to your Drive
 
 deleiverables.zip(84.4MB) folder has the following:
 
- Best Model(best_model.h5)
+    1. Best Model(best_model.h5)
  
- Best Model Weights (best_weights.h5)
+    2. Best Model Weights (best_weights.h5)
  
- X_test,y_test ( X_test.npy , y_test.npy )
+    3. X_test,y_test ( X_test.npy , y_test.npy )
 
 Execute the **Import Block**, **Custom CNN Block** which contains the **'create model function'** and unzip **deleiverables.zip**
 
@@ -225,6 +230,8 @@ The code is as follows
        model.load_weights('best_weights.h5')
 
 Now you can execute this code on Evaluation Block for checking the model's perfomance.
+
+UPDATE : I have also added .py file incase you are having troubles viewing .ipynb notebook. :)
 
 
 
