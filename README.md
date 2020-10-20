@@ -168,7 +168,7 @@ Open Python type the following commands to install the respective package.
 
      glob is preinstalled in python
 
-  *OpenCV:
+  OpenCV:
 
   Download latest OpenCV release from sourceforge site and double-click to extract it.
 
