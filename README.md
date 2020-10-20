@@ -2,7 +2,7 @@
 
 **Problem Statement :** 
 ​ ​Write code to implement simple ​ **bird image classification** ​ on ​ **customized
-CNN** ​.The accuracy has to be ​ **above 95%** ​.You can use either ​ **TensorFlow** ​ or ​ **PyTorch.** ​You have to use the below dataset.
+CNN** ​ The accuracy has to be ​ **above 95%** ​.You can use either ​ **TensorFlow** ​ or ​ **PyTorch.** ​You have to use the below dataset.
 
                [ http://www.vision.caltech.edu/visipedia/CUB-200.html​.](http://www.vision.caltech.edu/visipedia/CUB-200.html​.]
 
@@ -118,25 +118,30 @@ further,image size was changed to as described in paper to fit the model.
 
 ![image](https://user-images.githubusercontent.com/47039231/96600043-25d33280-130e-11eb-8871-a8d4fe5b0848.png)
 
-**Resnet 50 :** ​Resnet 50: It got an accuracy of about 70% , it did not improve any further.. Since it’s a
+**Resnet 50 :** 
+​Resnet 50: It got an accuracy of about 70% , it did not improve any further. Since it’s a
 much deeper network different types of augmentations were done like warping, random lightning
 Unfortunately I do not have the performance picture
 
 
 **Future Work**
-I think this performance could be increased by using 256X256 pixel inputs with a deeper model
+  1. I think this performance could be increased by using 256X256 pixel inputs with a deeper model
 than our current architecture but the problem availability of RAM in Google Colab the kernel
-crashes when I tried to augment 256 X 256 pictures and convert them.I also tried without
-augmentation the RAM still is not sufficient and kernel crashes. So with a GPU Machine that has
+crashes when I tried to augment 256 X 256 pictures and convert them.
+
+  2. I also tried without augmentation the RAM still is not sufficient and kernel crashes. So with a GPU Machine that has
 a better RAM capacity we can expect better accuracy by carefully redesigning a better
 architecture and applying good regularization techniques to avoid overfitting and get a better
 generalization.
-I also tried with 128X128 it was not stable, that is it gave different results every time ,and best
+
+  3. I also tried with 128X128 it was not stable, that is it gave different results every time ,and best
 result it produced was sometimes equal to the result produced by 64X
-Maybe Resnet 18 can also give a good result if we use more data by better augmentation and
+
+  4. Maybe Resnet 18 can also give a good result if we use more data by better augmentation and
 pre-processing as given in paper.The reason we have got such a less accuracy may be because
 of incorrect normalization.
-Whether Pretrained Network will improve accuracy is debatable because images in this dataset
+
+  5. Whether Pretrained Network will improve accuracy is debatable because images in this dataset
 overlap with images in ImageNet. We need to take extreme caution when using networks pre
 trained as the test set of CUB may overlap with the training set of the original network.
 
