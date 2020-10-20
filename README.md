@@ -4,7 +4,7 @@
 ​ ​Write code to implement simple ​ **bird image classification** ​ on ​ **customized
 CNN** ​ The accuracy has to be ​ **above 95%** ​.You can use either ​ **TensorFlow** ​ or ​ **PyTorch.** ​You have to use the below dataset.
 
-               [ http://www.vision.caltech.edu/visipedia/CUB-200.html​.]
+               [ http://www.vision.caltech.edu/visipedia/CUB-200.html​]
 
 Download it, split into train, val, test sets in the ratio (70, 10, 20).
 
