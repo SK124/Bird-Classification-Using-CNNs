@@ -78,18 +78,28 @@ go through the notebook.
 ![image](https://user-images.githubusercontent.com/47039231/96599751-dd1b7980-130d-11eb-969f-bea51b72a81d.png)
 
 **Parameters**
+
 Library Used: Keras with Tensorflow
+
 Loss Function: Multi-Label CrossEntropy
+
 Optimizer Used : Adam
+
 Learning Rate : Learning rate=0.001, Beta1=0.9, Beta2=0.
+
 Dropout : 0.5 , that is half of total neurons but only during train time.
+
 Total Number of epochs: 5X25 = 125
 
 
 **Results**
-Best Accuracy On Training Set : 95.61 %
+
+Best Accuracy On Training Set : 90.61 %
+
 Best Accuracy On Validation Set : 90.64 %
+
 Best Accuracy On Test Set : 88.56 %
+
 **Other Architecture Performances**
 As the required accuracy was to be more than 95% I tried out a few more existing architectures
 like Resnet18, Resnet 50, Vgg16 unfortunately I could not get any desired accuracy in fact lower ,
