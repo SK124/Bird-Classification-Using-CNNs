@@ -85,7 +85,7 @@ Loss Function: Multi-Label CrossEntropy
 
 Optimizer Used : Adam
 
-Learning Rate : Learning rate=0.001, Beta1=0.9, Beta2=0.
+Learning Rate : Learning rate=0.001, β1=0.9, β2=0.
 
 Dropout : 0.5 , that is half of total neurons but only during train time.
 
