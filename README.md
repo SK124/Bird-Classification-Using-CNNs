@@ -106,22 +106,27 @@ like Resnet18, Resnet 50, Vgg16 unfortunately I could not get any desired accura
 maybe because the dataset we were dealing with was too small for big architectures.
 For these architecture's implementations fast.ai library was used.Data Augmentation was done
 to avoid overfitting as much as possible using fast.ai Imagelist.
+
 Results are as follows:
-**Vgg16 with batchnorm​** : Maximum accuracy of 39% accuracy kept on oscillating back and forth
+
+**Vgg16 with batchnorm​** : 
+Maximum accuracy of 39% accuracy kept on oscillating back and forth
 but did not move above 39% in any of the epochs.
 
 ![image](https://user-images.githubusercontent.com/47039231/96599930-09cf9100-130e-11eb-9f52-70454ff934f8.png)
 
 
-**Resnet 18 :** ​ **​** It also did not perform well, got an mere accuracy of 20% and did not converge any
+**Resnet 18 :** ​ **​** 
+It also did not perform well, got an mere accuracy of 20% and did not converge any
 further,image size was changed to as described in paper to fit the model.
 
 ![image](https://user-images.githubusercontent.com/47039231/96600043-25d33280-130e-11eb-8871-a8d4fe5b0848.png)
 
 **Resnet 50 :** 
-​Resnet 50: It got an accuracy of about 70% , it did not improve any further. Since it’s a
+
+​Resnet 50: It got an accuracy of about 70%. It did not improve any further. Since it’s a
 much deeper network different types of augmentations were done like warping, random lightning
-Unfortunately I do not have the performance picture
+Unfortunately, I do not have the performance picture.
 
 **Snapshot From Notebook**
 
@@ -157,29 +162,32 @@ import them which will be step 2, but if you are using local machine then these 
 
 Open Python type the following commands to install the respective package.  
 
-Keras     : pip install keras
+     Keras     : pip install keras
 
-Tensorflow: pip3 install --user --upgrade tensorflow
+     Tensorflow: pip3 install --user --upgrade tensorflow
 
-glob is preinstalled in python
+     glob is preinstalled in python
 
-OpenCV:
+  *OpenCV:
 
-Download latest OpenCV release from sourceforge site and double-click to extract it.
+  Download latest OpenCV release from sourceforge site and double-click to extract it.
 
-Goto opencv/build/python/2.7 folder.
+   Goto   opencv/build/python/2.7 folder.
 
-Copy cv2. pyd to C:/Python27/lib/site-packeges.
+   Copy cv2. pyd to C:/Python27/lib/site-packeges.
 
-Open Python IDLE and type following codes in Python terminal. >>> import cv2 >>> print cv2. __version__
+Open Python IDLE and type following codes in Python terminal. 
 
-numpy,matplotlib are pre installed in python
+               >>> import cv2 
+               >>> print cv2. __version__
+
+Numpy, <atplotlib are pre installed in python
 
 After installing all the packages you can import them easily, for detailed imports please go through .ipynb/.py file.
 
 
 
-Datatset:
+**Datatset:**
 
 
       Images:http://www.vision.caltech.edu/visipedia-data/CUB-200/images.tgz  (648MB .tgz file)
@@ -197,11 +205,13 @@ Add it your drive account and follow the following instructions.
 
 **Instructions**
 
-After Placing  the Dataset in your Google drive,open colabarotry, mount your drive and  execute the 'Import Block' followed by 'Extracting All Files' 
+After Placing  the Dataset in your Google drive, open colabarotry, mount your drive and execute the **Import Block** followed by **Extracting All Files** 
 Codeblock from my ipynb file.
-The Notebook now has different blocks making it flexible to execute. Each block as a seperate funciton.Execute each block one by one or independently
-the other blocks.Keep in mind some blocks have depenence on other blocks.
-If you want to check the perfomance of the smodel follow this procedure:
+
+The Notebook now has different blocks making it flexible to execute. Each block as a seperate funciton. Execute each block one by one or independently
+the other blocks.Keep in mind some blocks have depenence on other blocks. 
+
+If you want to check the perfomance of the model, follow this procedure:
 
 Load the deleiverables.zip in to your Drive 
 
@@ -232,6 +242,12 @@ The code is as follows
 Now you can execute this code on Evaluation Block for checking the model's perfomance.
 
 UPDATE : I have also added .py file incase you are having troubles viewing .ipynb notebook. :)
+
+To run it execute the following code 
+
+     !python report_uscd_200.py  or  python report_uscd_200.py
+     
+   
 
 
 
