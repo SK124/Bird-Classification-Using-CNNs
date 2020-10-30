@@ -81,7 +81,7 @@ go through the notebook.
 
 Library Used: Keras with Tensorflow
 
-Loss Function: Multi-Label CrossEntropy
+Loss Function: Categorical CrossEntropy Since Classes are mutually exclusive. ( A bird can be of only one species)
 
 Optimizer Used : Adam
 
