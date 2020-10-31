@@ -19,7 +19,7 @@ information about the dataset, please see the technical report linked below.
    ● **Annotations:** ​ Bounding Box, Rough Segmentation, Attributes
 Size of the images folder is 648 MB in .tgz format.
 
-For this classification task we only need images and lists folder.
+* For this classification task we only need images and lists folder.
 
    ● Images
 
@@ -29,17 +29,17 @@ The images organized in subdirectories based on species.
 
 classes.txt : list of categories (species)
 
-files.txt : list of all image files (including subdirectories)
+     files.txt : list of all image files (including subdirectories)
 
-train.txt : list of all images used for training
+     train.txt : list of all images used for training
 
-test.txt : list of all images used for testing
+     test.txt : list of all images used for testing
 
-splits.mat : training/testing splits in MATLAB .mat format
+     splits.mat : training/testing splits in MATLAB .mat format
 
 Size after augmentation : 12066 Images (64X64)
 
-Augmentation : Image Flip
+* Augmentation : Image Flip
 
   ● X_train : 16892
 
@@ -79,26 +79,29 @@ go through the notebook.
 
 **Parameters**
 
-Library Used: Keras with Tensorflow
+* Library Used: Keras with Tensorflow
 
-Loss Function: Categorical CrossEntropy Since Classes are mutually exclusive. ( A bird can be of only one species)
+* Loss Function: Categorical CrossEntropy Since Classes are mutually exclusive. ( A bird can be of only one species)
 
-Optimizer Used : Adam
+* Optimizer Used : Adam
 
-Learning Rate : Learning rate=0.001, β1=0.9, β2=0.=0.999
+* Learning Rate : Learning rate=0.001, β1=0.9, β2=0.=0.999
 
-Dropout : 0.5 , that is half of total neurons but only during train time.
+* Dropout : 0.5 , that is half of total neurons but only during train time.
 
-Total Number of epochs: 5X25 = 125
+* Total Number of epochs: 5X25 = 125
 
 
 **Results**
 
-Best Accuracy On Training Set : 90.61 %
+* Best Results from CNN
 
-Best Accuracy On Validation Set : 90.64 %
+|   Data Type    | Acccuracy(%   |
+| -------------  | ------------- |
+| Training Set   |     90.16     |
+| Test Set       |     90.64     |
+| Validation Set |     88.56     |
 
-Best Accuracy On Test Set : 88.56 %
 
 **Other Architecture Performances**
 As the required accuracy was to be more than 95% I tried out a few more existing architectures
