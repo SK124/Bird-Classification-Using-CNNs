@@ -96,21 +96,22 @@ go through the notebook.
 
 * Best Results from CNN
 
-|   Data Type    | Acccuracy(%   |
+|   Data Type    | Acccuracy(%)  |
 | -------------  | ------------- |
 | Training Set   |     90.16     |
 | Test Set       |     90.64     |
 | Validation Set |     88.56     |
 
 
-**Other Architecture Performances**
+* Other Architecture Performances
+
 As the required accuracy was to be more than 95% I tried out a few more existing architectures
 like Resnet18, Resnet 50, Vgg16 unfortunately I could not get any desired accuracy in fact lower ,
 maybe because the dataset we were dealing with was too small for big architectures.
 For these architecture's implementations fast.ai library was used.Data Augmentation was done
 to avoid overfitting as much as possible using fast.ai Imagelist.
 
-Results are as follows:
+* Results are as follows:
 
 **Vgg16 with batchnorm​** : 
 Maximum accuracy of 39% accuracy kept on oscillating back and forth
@@ -125,11 +126,7 @@ further,image size was changed to as described in paper to fit the model.
 
 ![image](https://user-images.githubusercontent.com/47039231/96600043-25d33280-130e-11eb-8871-a8d4fe5b0848.png)
 
-**Resnet 50 :** 
 
-​Resnet 50: It got an accuracy of about 70%. It did not improve any further. Since it’s a
-much deeper network different types of augmentations were done like warping, random lightning
-Unfortunately, I do not have the performance picture.
 
 **Snapshot From Notebook**
 
