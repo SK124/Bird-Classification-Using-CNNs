@@ -27,7 +27,7 @@ The images organized in subdirectories based on species.
 
    ● Lists
 
-classes.txt : list of categories (species)
+     classes.txt : list of categories (species)
 
      files.txt : list of all image files (including subdirectories)
 
@@ -37,7 +37,7 @@ classes.txt : list of categories (species)
 
      splits.mat : training/testing splits in MATLAB .mat format
 
-Size after augmentation : 12066 Images (64X64)
+* Size after augmentation : 12066 Images (64X64)
 
 * Augmentation : Image Flip
 
